@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Cadastre-se - AmareLux Eletro</title>
-        <!--Início da Conexão CSS-->
+        <!--Conexão CSS-->
         <link href="styles.css" rel="stylesheet" type="text/css">
-        <!-- Fim da Conexão CSS-->
+        <!--Conexão JS-->
+        <script src="funcoes.js"></script>
     </head>
     <body>
         <!--Início do Menu-->
         <nav id="Logo">
             <a href="index.html">
-                <img width="21%" src="./imagens/LogoAmareLux.jpg" alt="AmareLux Eletro">
+                <img width="21%" src="./imagens/LogoAmareLux.jpg" alt="AmareLux Eletro" onmouseover="destacarLogo(this)" onmouseout="normalLogo(this)">
             </a>
         </nav>
         <nav class="Menu">
-            <a href="produtos.html">Produtos</a>
-            <a href="loja.html">Nossas Lojas</a>
-            <a href="faleconosco.html">Fale Conosco</a>
-            <a href="entreoucad.html">Entre ou Cadastre-se</a>
+            <a href="produtos.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Produtos</a>
+            <a href="loja.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Nossas Lojas</a>
+            <a href="faleconosco.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Fale Conosco</a>
+            <a href="entreoucad.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Entre ou Cadastre-se</a>
         </nav>
         <!--Fim do Menu-->
 
@@ -64,15 +65,13 @@
         </form>
         
         <!--Início de Formas de Pagamento-->
-        <br> <br> <br> <br> <br>
-        <hr>
-
-    <footer id="Rodape">
-        <h3>Formas de pagamento:</h3>
-        <img src="./imagens/forma de pagamento.jpg" alt="Formas de pagamento" width="25%">
-        <br>
-        <p>&copy; Recode Pro 2020 - Allan Jales</p>
-    </footer>
-    <!--Fim de Formas de Pagamento-->
+        <footer id="Rodape">
+            <hr>
+            <h3>Formas de pagamento:</h3>
+            <img src="./imagens/forma de pagamento.jpg" alt="Formas de pagamento" width="25%">
+            <br>
+            <p>&copy; Recode Pro 2020 - Allan Jales</p>
+        </footer>
+        <!--Fim de Formas de Pagamento-->
     </body>
 </html>

@@ -18,12 +18,17 @@
     font-family: Arial;
     font-weight: bold;
     text-decoration: none;
-    padding: 0% 8% 0% 8%;
+    padding: 0% 8.35% 0% 8.35%;
 }
 
 header {
     color:#041e50;
     font-family: Arial;
+}
+
+main
+{
+    margin-top:100px;
 }
 
 main h1 {
@@ -44,19 +49,19 @@ main p {
     font-family: Arial;
     font-size: 13.3px;
     width: 15%;
-    display: table-cell;
-    margin: 0 0 0 0;
+    display: block;
+    position: absolute;
 }
 
 .Produtos {
-    display:table;
+    margin-left: 15%;
     width: 100%;
 }
 
 .ItemProdutos {
     text-align: center;
-    width:20%;
-    display: table-cell;
+    width: 20%;
+    display: inline-block;
 }
 
 .DescricaoProdutos {
@@ -82,11 +87,11 @@ main p {
 }
 
 .Lojas {
-    width: 33%;
+    width: 29%;
     color:#041e50;
     font-family: Arial;
-    display:table-cell;
-    padding-left:5%;
+    display:inline-block;
+    text-align: center;
 }
 
 .TituloGeral {
@@ -100,4 +105,5 @@ main p {
     font-family: Arial;
     text-align: center;
     font-size: 13.3px;
+    margin-top: 100px;
 }
