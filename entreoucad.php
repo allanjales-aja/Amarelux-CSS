@@ -9,19 +9,10 @@
         <script src="funcoes.js"></script>
     </head>
     <body>
-        <!--Início do Menu-->
-        <nav id="Logo">
-            <a href="index.html">
-                <img width="21%" src="./imagens/LogoAmareLux.jpg" alt="AmareLux Eletro" onmouseover="destacarLogo(this)" onmouseout="normalLogo(this)">
-            </a>
-        </nav>
-        <nav class="Menu">
-            <a href="produtos.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Produtos</a>
-            <a href="loja.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Nossas Lojas</a>
-            <a href="faleconosco.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Fale Conosco</a>
-            <a href="entreoucad.html" onmouseover="destacarMenu(this)" onmouseout="normalMenu(this)">Entre ou Cadastre-se</a>
-        </nav>
-        <!--Fim do Menu-->
+        <!--Menu-->
+        <?php
+            include_once('menu.html')
+        ?>
 
         <header>
             <h2 style="text-align: center;">Entre na Amarelux</h2>
