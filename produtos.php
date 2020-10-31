@@ -51,8 +51,12 @@
                 <img src="<?php echo $rows["nome_img"]; ?>" width="120px" onclick="zoom(this)">
                 <p class="DescricaoProdutos"><?php echo $rows["descricao"]; ?></p>
                 <hr>
-                <p class="DescricaoProdutos" style="text-decoration: line-through;"><?php echo $rows["valor"]; ?></p>
-                <p class="PrecoProdutos"><?php echo $rows["valor_unit"]; ?></p>
+                <p class="DescricaoProdutos" style="text-decoration: line-through;">
+                    <?php if($rows["valor"] != null){ echo "R$ ",$rows["valor"];} 
+                        else {echo "R$ 0.00";} ?></p>
+                <p class="PrecoProdutos">
+                    <?php if($rows["valor"] != null){ echo "R$ ",$rows["valor_unit"];}
+                    else {echo "ESGOTADO :(";} ?></p>
             </div>
 <?php
         }

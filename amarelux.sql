@@ -34,19 +34,16 @@ values
 
 create table clientes
 (cod_clientes int auto_increment,
-nome_cli varchar(50) not null,
-endereco varchar(100) not null,
-telefone bigint(12) not null,
-primary key (cod_clientes, nome_cli, telefone))character set utf8 collate utf8_unicode_ci;
-
-insert into clientes (nome_cli, endereco, telefone)
-values
-("Aline", "Rua A, 01 - Recodópolis", 021111111111),
-("Allan", "Rua A, 02 - Recodópolis", 021222222222),
-("Jasmine", "Rua J, 01 - Recodópolis", 02133333333),
-("Joellis", "Rua J, 02 - Recodópolis", 021444444444),
-("Mayara", "Rua M, 01 - Recodópolis", 021555555555),
-("Pablo", "Rua M, 02 - Recodópolis", 021666666666);
+nome_cli varchar(50),
+cpf varchar (11),
+datan date,
+cep varchar (8),
+endereco varchar(100),
+telefone varchar(12),
+email varchar (50),
+senha varchar (8),
+oferta boolean,
+primary key (cod_clientes))character set utf8 collate utf8_unicode_ci;
 
 create table ped
 (cod_pedidos int auto_increment,

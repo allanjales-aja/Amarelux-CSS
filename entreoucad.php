@@ -28,7 +28,7 @@
             <input type="password" id="isenha" name="nsenha"><br><br>
 
             <input type="submit" value="Entrar">
-            <p><a href="cadastrar.html" id="Rodape">Cadastre-se</a></p>        
+            <p><a href="cadastrar.php" id="Rodape">Cadastre-se</a></p>        
         </form>
 
         <!--Rodapé-->
