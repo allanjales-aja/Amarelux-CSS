@@ -1,3 +1,7 @@
+<?php
+    require_once('conexao_bd.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -27,27 +31,39 @@
         </ul>
         <br>
 
-        <form>
+        <form method="post" action="insercaofaleconosco.php">
             <label for="nome" class="TituloGeral">Nome:</label><br>
-            <input type="text" id="inome" name="nnome" style="width:295px;">
+            <input type="text" id="nome" name="nome" style="width:295px;">
             <br><br>
             <label for="email" class="TituloGeral">E-mail:</label><br>
-            <input type="email" id="iemail" name="nemail" style="width:295px;">
+            <input type="email" id="email" name="email" style="width:295px;">
             <br><br>
             <label for="mensagem" class="TituloGeral">Mensagem:</label><br>
-            <textarea id="imensagem" name="nmensagem" rows="7" cols="40"></textarea>
+            <textarea id="mensagem" name="mensagem" rows="7" cols="40"></textarea>
             <br><br>
-            <input type="submit" value="Enviar">
+            <button type="submit" value="Enviar">Enviar</button>
         </form>
 
-        <!--Início de Formas de Pagamento-->
-        <footer id="Rodape">
-            <hr>
-            <h3>Formas de pagamento:</h3>
-            <img src="./imagens/forma de pagamento.jpg" alt="Formas de pagamento" width="25%">
-            <br>
-            <p>&copy; Recode Pro 2020 - Allan Jales</p>
-        </footer>
-        <!--Fim de Formas de Pagamento-->
+<main>
+    <?php
+        $sql = "select * from mensagens";
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0) {
+            while($rows = $result->fetch_assoc()){
+                echo "Data: ", $rows['data_msg'], "<br>";
+                echo "Nome: ", $rows['nome_msg'], "<br>";
+                echo "Mensagem: ", $rows['mensagem'], "<br>";
+                echo "<hr>";
+            }
+        } else {
+        echo "Nenhuma mensagem enviada!";
+        }
+    ?>
+</main>
+        <!--Rodapé-->
+        <?php
+            include_once('rodape.html')
+        ?>
     </body>
 </html>

@@ -43,14 +43,9 @@
                 <p>(27) 2222-1111</p>
             </div>
 
-        <!--Início de Formas de Pagamento-->
-        <footer id="Rodape">
-            <hr>
-            <h3>Formas de pagamento:</h3>
-            <img src="./imagens/forma de pagamento.jpg" alt="Formas de pagamento" width="25%">
-            <br>
-            <p>&copy; Recode Pro 2020 - Allan Jales</p>
-        </footer>
-        <!--Fim de Formas de Pagamento-->
+        <!--Rodapé-->
+        <?php
+            include_once('rodape.html')
+        ?>
     </body>
 </html>
