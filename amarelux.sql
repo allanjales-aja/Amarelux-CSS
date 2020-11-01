@@ -34,15 +34,16 @@ values
 
 create table clientes
 (cod_clientes int auto_increment,
-nome_cli varchar(50),
-cpf varchar (11),
-datan date,
-cep varchar (8),
-endereco varchar(100),
-telefone varchar(12),
-email varchar (50),
-senha varchar (8),
-oferta boolean,
+nome_cli varchar(50) not null,
+cpf varchar (11) not null,
+datan date not null,
+cep varchar (8) not null,
+endereco varchar(100) not null,
+telefone varchar(12) not null,
+email varchar (50) not null,
+senha varchar (8) not null,
+oferta boolean not null,
+unique (nome_cli, cpf, email),
 primary key (cod_clientes))character set utf8 collate utf8_unicode_ci;
 
 create table ped
@@ -80,5 +81,6 @@ mensagem varchar(300) not null unique,
 data_msg datetime default now(),
 primary key (cod_mensagens))character set utf8 collate utf8_unicode_ci;
 
+delete from clientes;
 
  

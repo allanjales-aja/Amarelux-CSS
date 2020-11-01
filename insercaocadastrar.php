@@ -20,10 +20,11 @@
             $sql = "insert into clientes (nome_cli, cpf, datan, cep, endereco, telefone, email, senha, oferta)
              values ('$nomec', '$cpf', '$datan', '$cep', '$enderecoc', '$telefone', '$emailc', '$senhaa', 
              '$oferta')";
-
+                     
             $result = $conn->query($sql);
-
-            echo "<h2> Parabéns!!! Você é cliente Amarelux!<h2>";
+            if($result){
+                echo "<h2> Parabéns!!! Você é cliente Amarelux!<h2>";
+   
 ?>
 
 <!DOCTYPE html>
@@ -39,10 +40,17 @@
 </html>
 
 <?php
-    } else{
-        echo "<h2> Quase lá! Siga as instruções abaixo para ser cliente Amarelux:<h2>";
-        echo "<p><h3>Click no botão para retornar à página anterior e verifique:<h3></p>
-            <p># Campos não preenchidos;</p>
-            <p># Campo 'Digite sua senha:' é igual a 'Confirme sua senha:'.</p>";
-    }
+    }else{
+        echo "<script>
+            alert('NOME, CPF ou E-MAIL já constam nos nossos registros para um mesmo cliente.')
+            </script>"; 
+        }
+        }else{
+        echo "<script>
+        alert('Click no botão para retornar à página anterior')
+        </script>";
+        echo "<script>
+        alert('Verifique campos não preenchidos e se DIGITE SUA SENHA é igual a CONFIRME SUA SENHA')
+        </script>";
+        }
 ?>

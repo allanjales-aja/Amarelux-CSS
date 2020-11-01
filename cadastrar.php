@@ -35,7 +35,8 @@
             <input type="number" id="cep" name="cep" placeholder = "Apenas números"><br><br>
 
             <label for="enderecoc" class="TituloGeral">Endereço:</label><br>
-            <input type="text" id="enderecoc" name="enderecoc" placeholder = "rua, nº - bairro - munic. - UF"><br><br>
+            <input type="text" id="enderecoc" name="enderecoc"  style="width:400px;" 
+            placeholder = "rua, número, complemento - bairro - município - UF"><br><br>
 
             <label for="telefone" class="TituloGeral">Telefone:</label><br>
             <input type="number" id="telefone" name="telefone" placeholder = "DDDxxxxxxxxx"><br><br>
