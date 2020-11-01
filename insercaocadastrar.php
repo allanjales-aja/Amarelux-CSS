@@ -40,8 +40,9 @@
 
 <?php
     } else{
-        echo "<h3>Click no botão para retornar à página anterior e verifique:<h3>
+        echo "<h2> Quase lá! Siga as instruções abaixo para ser cliente Amarelux:<h2>";
+        echo "<p><h3>Click no botão para retornar à página anterior e verifique:<h3></p>
             <p># Campos não preenchidos;</p>
-            <p># Senha repetida é diferente da anterior;</p>";
+            <p># Campo 'Digite sua senha:' é igual a 'Confirme sua senha:'.</p>";
     }
 ?>
