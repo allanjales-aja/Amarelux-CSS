@@ -1,7 +1,9 @@
 <?php
     require_once('conexao_bd.php');
 
-    if(isset($_POST['nomec']) && isset($_POST['cpf']) && isset($_POST['datan']) && isset($_POST['cep']) && isset($_POST['enderecoc']) && isset($_POST['telefone']) && isset($_POST['emailc']) && isset($_POST['senhaa']) && isset($_POST['senhab']) && isset($_POST['oferta'])){
+    if(isset($_POST['nomec']) && isset($_POST['cpf']) && isset($_POST['datan']) && isset($_POST['cep']) && 
+    isset($_POST['enderecoc']) && isset($_POST['telefone']) && isset($_POST['emailc']) && isset($_POST['senhaa']) 
+    && isset($_POST['senhab']) && isset($_POST['oferta'])){
 
         $nomec = $_POST['nomec'];
         $cpf = $_POST['cpf'];
@@ -35,7 +37,7 @@
     <title>Cadastro Amarelux</title>
 </head>
 <body>
-    <h4><a href='produtos.php'>Escolher produtos</a><h4>
+    <h4><a href='FormPedido.php'>Escolher produtos</a><h4>
 </body>
 </html>
 

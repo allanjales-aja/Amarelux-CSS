@@ -83,4 +83,6 @@ primary key (cod_mensagens))character set utf8 collate utf8_unicode_ci;
 
 delete from clientes;
 
+
+
  
